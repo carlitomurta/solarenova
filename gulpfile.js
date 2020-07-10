@@ -81,8 +81,8 @@ function serve(cb) {
 
 function watch() {
   gulp.watch('app/scss/**/*.scss', { events: 'all' }, css).on('change', browserSync.reload);
-  gulp.watch('app/*.html').on('change', browserSync.reload);
-  gulp.watch('app/js/**/*.js', { events: 'all' }, gulp.series(clean, javascript)).on('change', browserSync.reload);
+  gulp.watch('app/**/*.html', gulp.series(useIndex, browserSync.reload));
+  gulp.watch('app/js/**/*.js', { events: 'all' }, gulp.series(javascript, browserSync.reload))
 }
 
 exports.default = gulp.series(serve, watch);
