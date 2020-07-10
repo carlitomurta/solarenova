@@ -19,7 +19,7 @@ function clean(cb) {
 }
 
 function css(cb) {
-  gulp.src('app/scss/*.scss')
+  gulp.src('app/*.scss')
     .pipe(sass()) // Using gulp-sass
     .pipe(csso())
     .pipe(gulpif('.css', cssnano()))
@@ -82,7 +82,7 @@ function serve(cb) {
 function watch() {
   gulp.watch('app/scss/**/*.scss', { events: 'all' }, css).on('change', browserSync.reload);
   gulp.watch('app/**/*.html', gulp.series(useIndex, browserSync.reload));
-  gulp.watch('app/js/**/*.js', { events: 'all' }, gulp.series(javascript, browserSync.reload))
+  gulp.watch('app/js/**/*.js', { events: 'all' }, javascript).on('change', browserSync.reload)
 }
 
 exports.default = gulp.series(serve, watch);

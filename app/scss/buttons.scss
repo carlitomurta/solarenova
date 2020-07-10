@@ -1,5 +1,4 @@
-$red: red;
-
-body {
-  background-color: white !important;
+@import "variables.scss";
+.btn {
+  background-color: $red;
 }
