@@ -1,1 +1,11 @@
-@import "./scss/buttons.scss";
+// Variables
+@import "./scss/variables.scss";
+
+// Grid
+@import "./scss/grid/layout-grid.scss";
+
+// Typings
+@import "./scss/typings.scss";
+
+// Components
+@import "./scss/components/buttons.scss";

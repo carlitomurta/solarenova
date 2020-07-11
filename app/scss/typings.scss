@@ -1,0 +1,77 @@
+.regular {
+  font-weight: normal !important;
+}
+
+.semibold {
+  font-weight: 600 !important;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.t-overflow {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.f-100 {
+  @include f-100;
+}
+.f-200 {
+  @include f-200;
+}
+.f-300 {
+  @include f-300;
+}
+.f-400 {
+  @include f-400;
+}
+.f-500 {
+  @include f-500;
+}
+.f-600 {
+  @include f-600;
+}
+.f-700 {
+  @include f-700;
+}
+.f-800 {
+  @include f-800;
+}
+.f-900 {
+  @include f-900;
+}
+
+.f-b-100 {
+  @include f-b-100;
+}
+.f-b-200 {
+  @include f-b-200;
+}
+.f-b-300 {
+  @include f-b-300;
+}
+.f-b-400 {
+  @include f-b-400;
+}
+.f-b-500 {
+  @include f-b-500;
+}
+.f-b-600 {
+  @include f-b-600;
+}
+.f-b-700 {
+  @include f-b-700;
+}
+.f-b-800 {
+  @include f-b-800;
+}
+.f-b-900 {
+  @include f-b-900;
+}

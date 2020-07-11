@@ -1,1 +1,151 @@
-$red: red;
+/*
+ * Application global variables.
+ */
+
+@import "functions";
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$enable-grid-classes: true !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1248px,
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1188px,
+) !default;
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns: 16 !default;
+$grid-gutter-width: 32px !default;
+$grid-row-columns: 8 !default;
+
+// Utilities
+
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex,
+  inline-flex !default;
+$overflows: auto, hidden !default;
+$positions: static, relative, absolute, fixed, sticky !default;
+
+// Printing
+
+$print-page-size: a3 !default;
+$print-body-min-width: map-get($grid-breakpoints, "lg") !default;
+
+//
+// Media Querys
+//
+//MEDIA QUERIES
+$screen-xxs-min: 320px; // iPhone 4
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1248px;
+
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+
+//
+// Color system
+//
+
+/* V2 */
+$black500: #000;
+$black400: #424242;
+$black300: #696969;
+$black200: #cdcdcd;
+$black100: #efefef;
+
+$purple500: #7d39d4;
+$purple400: #9159db;
+$purple300: #b38de6;
+$purple200: #e0d1f5;
+$purple100: #f4eefb;
+
+$blue500: #007eea;
+$blue400: #1894ff;
+$blue300: #66b8ff;
+$blue200: #c6e4ff;
+$blue100: #e8f4ff;
+
+$green500: #19be5e;
+$green400: #17c862;
+$green300: #6edf9d;
+$green200: #c9f3da;
+$green100: #def8e9;
+
+$red500: #e11e49;
+$red400: #f93963;
+$red300: #fb88a1;
+$red200: #fdd2db;
+$red100: #feebef;
+
+$yellow500: #edad22;
+$yellow400: #fec548;
+$yellow300: #fed988;
+$yellow200: #ffeec8;
+$yellow100: #fff8e9;
+
+$facebook: #3b5998;
+$linkedin: #0077b5;
+$twitter: #1da1f2;
+$gmail: #ff6550;
+$whatsapp: #128c7e;
+
+$transition-speed: 0.2s;
+$transition-fn: ease-in-out;
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25,
+    ),
+    2: (
+      $spacer * 0.5,
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.5,
+    ),
+    5: (
+      $spacer * 3,
+    ),
+  ),
+  $spacers
+);
+
+@import "mixins.scss";
