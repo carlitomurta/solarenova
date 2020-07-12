@@ -1,0 +1,22 @@
+@import "variables.scss";
+*,
+*:before,
+*:after {
+  -webkit-border-sizing: border-box;
+  -moz-border-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: $white;
+  font-family: "Montserrat", sans-serif !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: $black;
+  height: calc(100vh - 80px) !important;
+  width: 100%;
+}
+html {
+  height: 100vh !important;
+}
