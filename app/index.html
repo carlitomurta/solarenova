@@ -9,27 +9,102 @@
 
   <body>
     <header class="header">
-      <div class="brand">
-        <img src="images/" />
+      <div class="container">
+        <div class="wrapper">
+          <div class="brand">
+            <img
+              class="brand-img"
+              src="./images/img-placeholder.png"
+              alt="Brand Logo"
+            />
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a>Início</a>
+            </li>
+            <li class="nav-item">
+              <a>Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a>Preços</a>
+            </li>
+            <li class="nav-item">
+              <a>Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a>Contato</a>
+            </li>
+          </ul>
+          <button>
+            Fazer orçamento
+          </button>
+        </div>
       </div>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a>Início</a>
-        </li>
-        <li class="nav-item">
-          <a>Serviços</a>
-        </li>
-        <li class="nav-item">
-          <a>Preços</a>
-        </li>
-        <li class="nav-item">
-          <a>Clie</a>
-        </li>
-        <li class="nav-item">
-          <a>Client</a>
-        </li>
-      </ul>
     </header>
+
+    <section class="lead-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="page-header-title">
+              Diminua em até 95% o gasto com energia
+            </h1>
+            <p class="page-header-text">
+              Gere sua própria energia, de forma limpa e sustentável. Solicite
+              um orçamento agora!
+            </p>
+          </div>
+          <div class="col-lg-8">
+            <div class="form-box">
+              <div class="row">
+                <div class="col-lg-8">
+                  <label class="label" for="name">
+                    Nome
+                  </label>
+                  <input id="name" class="input" type="text" />
+                </div>
+                <div class="col-lg-8">
+                  <label class="label" for="lastname">
+                    Sobrenome
+                  </label>
+                  <input id="lastname" class="input" type="text" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-16">
+                  <label class="label" for="email">
+                    E-mail
+                  </label>
+                  <input id="email" class="input" type="text" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-16">
+                  <label class="label" for="company">
+                    Empresa ou Organização
+                  </label>
+                  <input id="company" class="input" type="text" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-16">
+                  <button class="btn">
+                    Download now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clients-section">
+      <div class="container"></div>
+    </section>
+    <section class="services-section"><div class="container"></div></section>
+    <section class="cta-section"><div class="container"></div></section>
+
+    <footer></footer>
 
     <script src="main.min.js"></script>
   </body>

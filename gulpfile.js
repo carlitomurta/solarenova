@@ -97,7 +97,7 @@ function watch() {
     .on('change', browserSync.reload)
 }
 
-exports.default = gulp.series(serve, watch)
+exports.default = gulp.series(images, fonts, serve, watch)
 
 exports.build = gulp.series(
   clean,

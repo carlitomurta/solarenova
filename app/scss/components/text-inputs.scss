@@ -1,0 +1,24 @@
+@import '../variables.scss';
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: $black300;
+}
+.input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 3rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $black100;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 1.5rem;
+  &:focus {
+    outline: 0;
+    border-color: $yellow500;
+  }
+  &:hover {
+    border-color: $yellow400;
+  }
+}

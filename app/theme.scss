@@ -1,6 +1,12 @@
 // Variables
 @import './scss/variables.scss';
 
+// Body
+@import './scss/body.scss';
+
+// Mixins
+@import './scss/mixins.scss';
+
 // Grid
 @import './scss/grid/layout-grid.scss';
 
@@ -8,4 +14,7 @@
 @import './scss/typings.scss';
 
 // Components
+@import './scss/components/text-inputs.scss';
 @import './scss/components/buttons.scss';
+@import './scss/components/header.scss';
+@import './scss/components/lead-section.scss';

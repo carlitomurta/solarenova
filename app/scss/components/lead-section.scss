@@ -1,0 +1,22 @@
+@import '../variables.scss';
+
+.lead-section {
+  height: 700px;
+  .page-header-title {
+    font-size: 2.5rem;
+  }
+  .page-header-text {
+    font-size: 1.2rem;
+  }
+
+  .form-box {
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(31, 45, 65, 0.15);
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba($color: $black500, $alpha: 0.1);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+}

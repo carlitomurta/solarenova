@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import 'variables.scss';
 *,
 *:before,
 *:after {
@@ -10,10 +10,10 @@ body {
   margin: 0;
   padding: 0;
   background: $white;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  color: $black;
+  color: $black500;
   height: calc(100vh - 80px) !important;
   width: 100%;
 }

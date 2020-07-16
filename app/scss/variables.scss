@@ -2,7 +2,7 @@
  * Application global variables.
  */
 
-@import "functions";
+@import 'functions';
 
 // Grid breakpoints
 //
@@ -19,8 +19,8 @@ $grid-breakpoints: (
   xl: 1248px,
 ) !default;
 
-@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
-@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+@include _assert-ascending($grid-breakpoints, '$grid-breakpoints');
+@include _assert-starts-at-zero($grid-breakpoints, '$grid-breakpoints');
 
 // Grid containers
 //
@@ -33,7 +33,7 @@ $container-max-widths: (
   xl: 1188px,
 ) !default;
 
-@include _assert-ascending($container-max-widths, "$container-max-widths");
+@include _assert-ascending($container-max-widths, '$container-max-widths');
 
 // Grid columns
 //
@@ -53,7 +53,7 @@ $positions: static, relative, absolute, fixed, sticky !default;
 // Printing
 
 $print-page-size: a3 !default;
-$print-body-min-width: map-get($grid-breakpoints, "lg") !default;
+$print-body-min-width: map-get($grid-breakpoints, 'lg') !default;
 
 //
 // Media Querys
@@ -73,7 +73,8 @@ $screen-md-max: ($screen-lg-min - 1);
 // Color system
 //
 
-/* V2 */
+$white: #fff;
+
 $black500: #000;
 $black400: #424242;
 $black300: #696969;
@@ -148,4 +149,4 @@ $spacers: map-merge(
   $spacers
 );
 
-@import "mixins.scss";
+@import 'mixins.scss';
